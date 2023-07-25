@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Situs Web</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <header>
+    <a href="#" class="brand">Pesona Kamojang</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="index.html">Home</a>
+        <a href="kawah.html">Kawah-Kawah</a>
+        <a href="fasilitas.html">Tiket & Fasilitas</a>
+        <a href="penginapan.html">Penginapan</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="githubwegy" target="_blank">WebGIS Borondong</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="home">
+    <img class="gambar-slide active" src="img/keren.jpg" alt="">
+    <img class="gambar-slide" src="img/Foto Tim.JPG" alt="">
+    <img class="gambar-slide" src="img/TTG3.jpg" alt="Foto Bersama">
+    <img class="gambar-slide" src="img/Tim KKN Ibun.JPG" alt="">
+    <div class="konten active">
+        <h1>Tentang<br><span>Situs Web</span></h1>
+        <p>Situs web pesonakamojang.com merupakan situs web promosi Taman Wisata Alam Kawah Kamojang</p>
+      </div>
+    <div class="konten">
+      <h1>Tentang<br><span>Situs Web</span></h1>
+      <p>Situs web ini dibangun oleh Vito Hartanto sebagai Front-end Developer dan Yulia Gerhana Wulandari sebagai Pemateri Konten. Situs web ini merupakan realisasi program kerja interdisipliner KKN UGM Pesona Ibun 2023.</p>
+    </div>
+    <div class="konten">
+      <h1><i>Special</i><br><span><i>Credits</i></span></h1>
+      <p>Kepada Bpk. Ir. Deva Fosterharoldas Swasto, S.T., M.Sc., Ph.D., IPM. selaku DPL (Dosen Pembimbing Lapangan) KKN UGM Ibun 2023 yang selalu ramah, murah senyum, dan kooperatif.</p>
+    </div>
+    <div class="konten">
+      <h1>Tim<br><span>KKN Ibun 2023</span></h1>
+      <p></p>
+    </div>
+    <div class="media-icons">
+      <a href="https://www.instagram.com/kamojangguntur/"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="slider-navigation">
+      <div class="nav-btn active"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+    </div>
+  </section>
+
+  <!-- JAVASCRIPT CODE BEGINS -->
+  <script type="text/javascript">
+    // Javascript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+    //Javascript for gambar slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".gambar-slide");
+    const kontens = document.querySelectorAll(".konten");
+
+    var sliderNav = function (manual) {
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      kontens.forEach((konten) => {
+        konten.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      kontens[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+  </script>
+  <!-- JAVASCRIPT CODE ENDS -->
+</body>
+
+</html>

@@ -12,6 +12,11 @@
 
 <body>
 
+  <div id="preloader" class="center">
+    <div class="ring"></div>
+    <span class="teks">loading...</span>
+  </div>
+
   <header>
     <a href="#" class="brand">Pesona Kamojang</a>
     <div class="menu-btn"></div>
@@ -33,16 +38,18 @@
     <img class="gambar-slide" src="img/TTG3.jpg" alt="Foto Bersama">
     <img class="gambar-slide" src="img/Tim KKN Ibun.JPG" alt="">
     <div class="konten active">
-        <h1>Tentang<br><span>Situs Web</span></h1>
-        <p>Situs web pesonakamojang.com merupakan situs web promosi Taman Wisata Alam Kawah Kamojang</p>
-      </div>
+      <h1>Tentang<br><span>Situs Web</span></h1>
+      <p>Situs web pesonakamojang.com merupakan situs web promosi Taman Wisata Alam Kawah Kamojang</p>
+    </div>
     <div class="konten">
       <h1>Tentang<br><span>Situs Web</span></h1>
-      <p>Situs web ini dibangun oleh Vito Hartanto sebagai Front-end Developer dan Yulia Gerhana Wulandari sebagai Pemateri Konten. Situs web ini merupakan realisasi program kerja interdisipliner KKN UGM Pesona Ibun 2023.</p>
+      <p>Situs web ini dibangun oleh Vito Hartanto sebagai Front-end Developer dan Yulia Gerhana Wulandari sebagai
+        Pemateri Konten. Situs web ini merupakan realisasi program kerja interdisipliner KKN UGM Pesona Ibun 2023.</p>
     </div>
     <div class="konten">
       <h1><i>Special</i><br><span><i>Credits</i></span></h1>
-      <p>Kepada Bpk. Ir. Deva Fosterharoldas Swasto, S.T., M.Sc., Ph.D., IPM. selaku DPL (Dosen Pembimbing Lapangan) KKN UGM Ibun 2023 yang selalu ramah, murah senyum, dan kooperatif.</p>
+      <p>Kepada Bpk. Ir. Deva Fosterharoldas Swasto, S.T., M.Sc., Ph.D., IPM. selaku DPL (Dosen Pembimbing Lapangan) KKN
+        UGM Ibun 2023 yang selalu ramah, murah senyum, dan kooperatif.</p>
     </div>
     <div class="konten">
       <h1>Tim<br><span>KKN Ibun 2023</span></h1>
@@ -98,6 +105,11 @@
         sliderNav(i);
       });
     });
+
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    })
   </script>
   <!-- JAVASCRIPT CODE ENDS -->
 </body>

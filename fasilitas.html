@@ -12,6 +12,11 @@
 
 <body>
 
+  <div id="preloader" class="center">
+    <div class="ring"></div>
+    <span class="teks">loading...</span>
+  </div>
+
   <header>
     <a href="#" class="brand">Pesona Kamojang</a>
     <div class="menu-btn"></div>
@@ -34,27 +39,32 @@
     <img class="gambar-slide" src="img/Gazebo Fix.jpg" alt="Gazebo dan Ruang Ganti">
     <img class="gambar-slide" src="img/Pemandian Air Panas.jpg" alt="Pemandian Air Panas">
     <div class="konten active">
-        <h1>Harga<br><span>Tiket Masuk</span></h1>
-        <p>Tiket masuk Rp 7.000,00 untuk hari kerja.<br>
-          Tiket masuk Rp 9.500,00 untuk <i>weekend</i>.<br>          
-          Parkir motor Rp 5.000,00.<br>
-          Parkir mobil Rp 15.000,00.</p>
-      </div>
+      <h1>Harga<br><span>Tiket Masuk</span></h1>
+      <p>Tiket masuk Rp 7.000,00 untuk hari kerja.<br>
+        Tiket masuk Rp 9.500,00 untuk <i>weekend</i>.<br>
+        Parkir motor Rp 5.000,00.<br>
+        Parkir mobil Rp 15.000,00.</p>
+    </div>
     <div class="konten">
       <h1>Fasilitas<br><span>Warung Makan</span></h1>
-      <p>Tersedia warung-warung yang menyediakan berbagai macam makanan, baik makanan ringan maupun makanan berat. Wisatawan dapat menikmati beragam makanan khas Sunda di destinasi ini. Jangan lupa untuk mencoba bandrek dan surabi Kang Didi yang sangat cocok dikonsumsi saat berkunjung ke sini.</p>
+      <p>Tersedia warung-warung yang menyediakan berbagai macam makanan, baik makanan ringan maupun makanan berat.
+        Wisatawan dapat menikmati beragam makanan khas Sunda di destinasi ini. Jangan lupa untuk mencoba bandrek dan
+        surabi Kang Didi yang sangat cocok dikonsumsi saat berkunjung ke sini.</p>
     </div>
     <div class="konten">
       <h1>Fasilitas<br><span>Tempat Parkir Luas</span></h1>
-      <p>Lahan parkir di TWA Kawah Kamojang sangat luas dan nyaman. Lahan ini dapat menampung cukup banyak mobil dan motor wisatawan.</p>
+      <p>Lahan parkir di TWA Kawah Kamojang sangat luas dan nyaman. Lahan ini dapat menampung cukup banyak mobil dan
+        motor wisatawan.</p>
     </div>
     <div class="konten">
       <h1>Fasilitas<br><span>Gazebo dan Ruang Ganti</span></h1>
-      <p>Destinasi ini dilengkapi gazebo untuk wisatawan dapat duduk santai menikmati pemandangan asri. Selain itu, tersedia pula ruang ganti pakaian untuk para wisatawan.</p>
+      <p>Destinasi ini dilengkapi gazebo untuk wisatawan dapat duduk santai menikmati pemandangan asri. Selain itu,
+        tersedia pula ruang ganti pakaian untuk para wisatawan.</p>
     </div>
     <div class="konten">
       <h1>Fasilitas<br><span>Pemandian Air Panas</span></h1>
-      <p>Wisatawan dapat menikmati kesegaran mandi air panas di dalam kamar mandi khusus. Wisatawan cukup membayar Rp5.000,00 per orang untuk dapat mandi air panas di destinasi ini.</p>
+      <p>Wisatawan dapat menikmati kesegaran mandi air panas di dalam kamar mandi khusus. Wisatawan cukup membayar
+        Rp5.000,00 per orang untuk dapat mandi air panas di destinasi ini.</p>
     </div>
     <div class="media-icons">
       <a href="https://www.instagram.com/kamojangguntur/"><i class="fab fa-instagram"></i></a>
@@ -107,6 +117,11 @@
         sliderNav(i);
       });
     });
+
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    })
   </script>
   <!-- JAVASCRIPT CODE ENDS -->
 </body>

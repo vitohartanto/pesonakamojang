@@ -12,6 +12,12 @@
 
 <body>
 
+  <div id="preloader" class="center">
+    <div class="ring"></div>
+    <span class="teks">loading...</span>
+  </div>
+
+
   <header>
     <a href="#" class="brand">Pesona Kamojang</a>
     <div class="menu-btn"></div>
@@ -35,9 +41,9 @@
     <img class="gambar-slide" src="img/Stikgas.jpg" alt="Kawah Stikgas">
     <img class="gambar-slide" src="img/Hujan.jpg" alt="Kawah Hujan">
     <div class="konten active">
-        <h1>Kawah<br><span>Manuk</span></h1>
-        <p></p>
-      </div>
+      <h1>Kawah<br><span>Manuk</span></h1>
+      <p></p>
+    </div>
     <div class="konten">
       <h1>Kawah<br><span>Berecek</span></h1>
       <p></p>
@@ -110,6 +116,11 @@
         sliderNav(i);
       });
     });
+
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    })
   </script>
   <!-- JAVASCRIPT CODE ENDS -->
 </body>

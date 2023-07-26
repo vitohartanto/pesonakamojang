@@ -12,6 +12,11 @@
 
 <body>
 
+  <div id="preloader" class="center">
+    <div class="ring"></div>
+    <span class="teks">loading...</span>
+  </div>
+
   <header>
     <a href="#" class="brand">Pesona Kamojang</a>
     <div class="menu-btn"></div>
@@ -19,7 +24,7 @@
       <div class="navigation-items">
         <a href="index.html">Home</a>
         <a href="kawah.html">Kawah-Kawah</a>
-        <a href="fasilitas.html">Tiket</a>
+        <a href="fasilitas.html">Tiket & Fasilitas</a>
         <a href="penginapan.html">Penginapan</a>
         <a href="tentang.html">Tentang</a>
         <a href="githubwegy" target="_blank">WebGIS Borondong</a>
@@ -29,26 +34,30 @@
 
   <section class="home">
     <video class="video-slide active" src="img/co_1_Fix.m4v" autoplay muted loop></video>
-    <video class="video-slide" src="img/Co Tiga asli.m4v" autoplay muted loop></video>
+    <video class="video-slide" src="img/Co Tiga Asli.m4v" autoplay muted loop></video>
     <video class="video-slide" src="img/Co Jadi2 real.m4v" autoplay muted loop></video>
-    <video class="video-slide" src="img/co_Empat.m4v" autoplay muted loop></video>
+    <video class="video-slide" src="img/co_empat.m4v" autoplay muted loop></video>
     <video class="video-slide" src="img/Co Jadi1 asli.m4v" autoplay muted loop></video>
     <div class="content active">
       <h1>Welcome to<br><span>Kawah Kamojang</span></h1>
-      <p>Keindahan alam yang terletak di Kabupaten Bandung, Jawa Barat. Kawah ini merupakan bagian dari kompleks gunung berapi Galunggung. </p>
-      <a href="fasilitas.html">Tiket</a>
+      <p>Keindahan alam yang terletak di Kabupaten Bandung, Jawa Barat. Kawah ini merupakan bagian dari kompleks gunung
+        berapi Galunggung. </p>
+      <a href="fasilitas.html">Tiket dan Fasilitas</a>
     </div>
     <div class="content">
       <h1>Keindahan<br><span>Uap Panas Bumi</span></h1>
-      <p>Relaksasikan dirimu dengan bermandi sauna. Belerang dipercaya dapat melancarkan peredaran darah dan pernafasan.</p>
+      <p>Relaksasikan dirimu dengan bermandi sauna. Belerang dipercaya dapat melancarkan peredaran darah dan pernafasan.
+      </p>
     </div>
     <div class="content">
       <h1>Beragam<br><span>Keunikan Kawah</span></h1>
-      <p>TWA Kawah Kamojang memiliki beragam jenis kawah, seperti Kawah Manuk, Kawah Berecek, Kawah Kendang, Kawah Kereta Api, Kawah Stikgas, dan Kawah Hujan. Kamu dapat menikmati keunikan di setiap kawah tersebut!</p>
+      <p>TWA Kawah Kamojang memiliki beragam jenis kawah, seperti Kawah Manuk, Kawah Berecek, Kawah Kendang, Kawah
+        Kereta Api, Kawah Stikgas, dan Kawah Hujan. Kamu dapat menikmati keunikan di setiap kawah tersebut!</p>
     </div>
     <div class="content">
       <h1>Aksesibilitas,<br><span>Amenintas, dan Akomodasi</span></h1>
-      <p>Beragam fasilitas lengkap dan mumpuni untuk memenuhi segala kebutuhan wisatawan, seperti ATM, mushola, toilet, foodcourt, dan lahan parkir. Tak perlu risau lagi untuk mengunjungi destinasi ini.</p>
+      <p>Beragam fasilitas lengkap dan mumpuni untuk memenuhi segala kebutuhan wisatawan, seperti ATM, mushola, toilet,
+        foodcourt, dan lahan parkir. Tak perlu risau lagi untuk mengunjungi destinasi ini.</p>
     </div>
     <div class="content">
       <h1>Kepuasanmu<br><span>menjadi Kebahagiaan Kami</span></h1>
@@ -105,6 +114,11 @@
         sliderNav(i);
       });
     });
+
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    })
   </script>
   <!-- JAVASCRIPT CODE ENDS -->
 </body>
